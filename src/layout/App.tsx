@@ -7,6 +7,8 @@ import {
   VideoCameraOutlined,
 } from '@ant-design/icons'
 import React, { useState } from 'react'
+import Home from '../views/home/index'
+
 const { Header, Sider, Content } = Layout
 
 const App: React.FC = () => {
@@ -52,7 +54,7 @@ const App: React.FC = () => {
             )}
           </Header>
           <Content className="layout-content">
-            Content
+            <Home></Home>
           </Content>
         </Layout>
       </Layout>
