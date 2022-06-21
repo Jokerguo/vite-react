@@ -8,6 +8,7 @@ import {
 } from '@ant-design/icons'
 import React, { useState } from 'react'
 import Home from '@/views/home/index'
+import './layout.less'
 
 const { Header, Sider, Content } = Layout
 
@@ -47,10 +48,7 @@ const App: React.FC = () => {
           <Header className="layout-header">
             {React.createElement(
               collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
-              {
-                className: 'trigger',
-                onClick: () => setCollapsed(!collapsed),
-              }
+              { className:'trigger',onClick: () => setCollapsed(!collapsed) }
             )}
           </Header>
           <Content className="layout-content">

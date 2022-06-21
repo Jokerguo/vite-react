@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client'
 import App from './layout/layout'
 import '@/assets/style/index.less'
 
-
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <App />
