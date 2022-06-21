@@ -7,7 +7,7 @@ import {
   VideoCameraOutlined,
 } from '@ant-design/icons'
 import React, { useState } from 'react'
-import Home from '../views/home/index'
+import Home from '@/views/home/index'
 
 const { Header, Sider, Content } = Layout
 
