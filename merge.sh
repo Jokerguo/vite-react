@@ -7,6 +7,11 @@ read -p "请输入分支主分支名称不包含_main: " branchName
 allBranch=$(git branch --all | grep ${branchName})
 main="_main"
 mainBranch="${branchName}${main}"
+read -p "确定主分支名称:${mainBranch} y/n:" confirm
+if [ $confirm = "n" ] 
+  then
+    exit_script
+fi
 echo "搜索的所有分支名称-> "$allBranch
 OLD_IFS="$IFS"
 arr=($allBranch)
